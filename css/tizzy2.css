@@ -49,7 +49,7 @@ a.nav-link, span.navbar-brand, .navbar-brand {
 
 @media(min-width: 577px){
    .nav-item:nth-of-type(1) {
-    margin-left: 5em !important;
+    margin-left: 3em !important;
    }
    .navbar-nav > * + * {
     margin-left: 1em;
@@ -73,9 +73,7 @@ button i.bi {
     text-transform: capitalize;
     font-size: 0.875rem;
 }
-.navbar-toggler-icon {
-    color: var(--color1);
-}
+
 /* end of navigation menu section */
 
 /* hero section */

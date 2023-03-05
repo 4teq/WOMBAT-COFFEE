@@ -1,0 +1,179 @@
+
+/* start: page general rule section */
+:root {
+    --color1: #fff;
+    --color2: #888;
+    --color3: #333;
+    
+    font-size: calc(1vw + 0.5em);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+@media(max-width: 576px){
+    :root {
+        font-size: calc(1vw + 0.7em);
+    }
+}
+/* end of page general rules section */
+
+/* start: navigation menu section */
+
+nav.navbar {
+    background-color:#333333a6;
+}
+
+a.nav-link, span.navbar-brand, .navbar-brand {
+    color: #fff !important;
+}
+@media(max-width: 576px){
+    a.nav-link {
+        font-size: 1.3rem;
+    }
+
+    li.nav-item {
+        background-color: #888888cb;
+        text-align: center;
+        width: 80vw;
+       margin-left: auto;
+       margin-right: auto;
+       border-radius: 0.5em;
+        
+    }
+    .navbar-nav > * + * {
+        margin-top: 0.3em;
+    }
+}
+
+@media(min-width: 577px){
+   .nav-item:nth-of-type(1) {
+    margin-left: 5em !important;
+   }
+   .navbar-nav > * + * {
+    margin-left: 1em;
+   }
+}
+
+
+
+/* making the buttons from bootstrap buttons to have a color and bigger font-size  */
+button i.bi {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+    display:block;
+}
+
+.slogan {
+    text-transform: capitalize;
+    font-size: 0.875rem;
+}
+.navbar-toggler-icon {
+    color: var(--color1);
+}
+/* end of navigation menu section */
+
+/* hero section */
+
+.hero {
+    background-image: url(../photos/coffee-beans.jpg);
+    height: 50vh;
+    background-position: c;
+    background-size: cover;
+    display: flex;
+}
+
+.hero-text {
+    color: white;
+    text-align:justify;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 0.5em 1em;
+    
+}
+
+@media(min-width:577px){
+    .hero {
+        height: 70vh;
+        justify-content: flex-end;
+    }
+    section.hero-text {
+        width: 60vw;
+    }
+}
+/* hero section end */
+
+
+/* main section */
+main {
+    background-color:#33333310;
+    color:#333;
+
+    padding-top: 3em;
+}
+
+main > .row {
+    padding: 0 2em;
+}
+
+main > .row > .col {
+    background-color: #fff;
+    padding: 1em 1.5em;
+    border: 0.5px dashed #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.col > .btn {
+    margin-top: auto;
+}
+
+main .subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    
+}
+main p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+main .col + .col {
+    margin-top: 2em;
+}
+
+@media(min-width:992px){
+
+    main .subtitle {
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+    main p {
+        font-size: 0.9rem;
+        margin-top: 2em;
+    }
+    main .col + .col {
+        margin-top: 0;
+        margin-left: 1.5em;
+    }
+
+    main .row {
+        display: flex;
+    }
+   main .col {
+    flex: 1;
+   }
+    
+
+}
+
+/* end of main section */

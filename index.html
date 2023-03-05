@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="modules/bootstrap.min.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="modules/bootstrap-icons.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/tizzy2.css">
+    <title>Wombat Coffee</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm fixed-top">
+
+        <a href="#" class="navbar-brand"> WOMBAT COFFEE ROASTERS</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+            <i class="bi bi-chevron-double-down"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link ">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Brew</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+
+    <div class="container-fluid hero">
+        <section class="hero-text">
+            Welcome to Wombat Coffee Roasters! We are
+            passionate about our craft, striving to bring you
+            the best hand-crafted coffee in the city.
+        </section>
+
+    </div>
+
+
+    <!-- end of hero section -->
+
+    <!-- main section -->
+    <main class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <h2 class="subtitle">Single-origin</h2>
+                <p>We have built partnerships with small farms
+                    around the world to hand-select beans at the
+                    peak of season. We then carefully roast in
+                    <a href="/batch-size.html">small batches</a>
+                    to maximize their potential.
+                </p>
+                <button type="button" class="btn btn-lg btn-secondary">Read More ...</button>
+            </div>
+            <div class="col">
+                <h2 class="subtitle">Blends</h2>
+                <p>Our tasters have put together a selection of
+                    carefully balanced blends. Our famous
+                    <a href="/house-blend.html">house blend</a>
+                    is available year round.
+                </p>
+                <button type="button" class="btn btn-lg btn-secondary">Read More ...</button>
+            </div>
+            <div class="col">
+                <h2 class="subtitle">Brewing Equipment</h2>
+                <p>We offer our favorite kettles, French
+                    presses, and pour-over cones. Come to one of
+                    our <a href="/classes.html">brewing
+                        classes</a> to learn how to brew the perfect
+                    pour-over cup.</p>
+                
+                    <button type="button" class="btn btn-lg btn-secondary">Read More ...</button>
+            </div>
+
+        </div>
+    </main>
+    <!-- end of main section  -->
+
+
+    <!-- js -->
+    <!-- jquery.js then popper.js then bootstrap.js -->
+    <script src="modules/jquery.min.js"></script>
+    <script src="modules/popper.min.js"></script>
+    <script src="modules/bootstrap.min.js"></script>
+
+    <!-- custom js -->
+    <script>
+        $('button.navbar-toggler').on('click', function (event) {
+            $('button > *').toggleClass('bi-chevron-double-down bi-chevron-double-up');
+        });
+
+    </script>
+</body>
+
+</html>
